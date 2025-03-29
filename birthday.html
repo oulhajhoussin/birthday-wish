@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffccff;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #ff3366;
+        }
+        .message {
+            font-size: 20px;
+            color: #333;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: pulse 1s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday, My Love! 🎂</h1>
+    <p class="message">Today, you turn 24! I love you so much! ❤️</p>
+    <p class="heart">❤️❤️❤️</p>
+    <button onclick="playMusic()">Click for a Surprise</button>
+    <audio id="song" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+
+    <script>
+        function playMusic() {
+            document.getElementById("song").play();
+            alert("Happy Birthday, My Love! 🎶");
+        }
+    </script>
+</body>
+</html>
+
